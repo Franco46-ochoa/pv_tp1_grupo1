@@ -1,3 +1,46 @@
-h1{
-    font-size: 25px;
+
+/* Elimina márgenes y rellenos predeterminados */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+.encabezado-colorido {
+  display: flex;
+  justify-content: flex-start; /* alineado a la izquierda */
+  align-items: center; 
+  background-color: #ffff72; 
+  box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+  max-width: auto;
+  margin: 0%;
+}
+
+.escudo {
+  width: 50px;
+  height: auto;
+  margin: 4px;
+}
+
+.linea-bandera {
+  display: flex;
+  flex-direction: column;
+  width: 5px;
+  height: 60px;
+  margin-right: 4px;
+}
+
+.franja {
+  flex: 1;
+  width: 100%;
+}
+
+.amarillo { background-color: #fcd116; }
+.azul     { background-color: #003893; }
+.rojo     { background-color: #ce1126; }
+
+.titulo-colombia {
+  font-size: 18px;
+  font-family: 'Parisienne', cursive;
+  color: #000;
 }
