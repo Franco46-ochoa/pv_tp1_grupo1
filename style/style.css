@@ -1,46 +1,121 @@
-
-/* Elimina márgenes y rellenos predeterminados */
-body, html {
+/* Encabezado general */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-
-.encabezado-colorido {
+.encabezado {
   display: flex;
-  justify-content: flex-start; /* alineado a la izquierda */
-  align-items: center; 
-  background-color: #ffff72; 
-  box-shadow: 0 3px 4px rgba(0,0,0,0.2);
-  max-width: auto;
-  margin: 0%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a2b4c; /* Azul oscuro */
+  padding: 5px 40px ;
+  color: white;
 }
 
-.escudo {
-  width: 50px;
-  height: auto;
-  margin: 4px;
+/* Logo y texto debajo */
+.logo-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 15px;
+  width: auto;
+  height: 100px;
+  opacity: 0.75;
+}
+
+.nombre-pais {
+  font-family:'Parisienne', cursive;
+  font-size:30px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 15px;
+  opacity: 0.75;
+}
+
+/* Menú a la derecha */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.boton {
+  font-family:'Parisienne', cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.boton:hover {
+  text-decoration: underline;
 }
 
 .linea-bandera {
   display: flex;
-  flex-direction: column;
-  width: 5px;
-  height: 60px;
-  margin-right: 4px;
+  height: 6px;
 }
 
 .franja {
-  flex: 1;
-  width: 100%;
+  flex: 0.5px;
 }
 
-.amarillo { background-color: #fcd116; }
-.azul     { background-color: #003893; }
-.rojo     { background-color: #ce1126; }
+.amarillo {
+  background-color: #FFD700;
+}
 
-.titulo-colombia {
-  font-size: 18px;
-  font-family: 'Parisienne', cursive;
-  color: #000;
+.azul {
+  background-color: #0033A0;
+}
+
+.rojo {
+  background-color: #CE1126;
+}
+.titulo2{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  font-size: 20px;
+}
+.Contenido {
+  margin-top: 6px;
+  position:static;
+  width: 200px;
+  height: 80vh ; 
+  background-color: #ffffff;
+  padding: 10px;
+}
+.cuerpo {
+  display: flex;
+  height:100vh; 
+}
+.Contenido li {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  color: #13163f;
+}
+.cuadrodeinformacion {
+  margin-top: 50px;
+  max-width: 100%; /* Que no se limite */
+  width: 100%; /* Que use todo el ancho disponible */
+  overflow: visible;
+  margin-left: 25px;
+}
+.Cultura{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Azul oscuro */
+  padding: 5px 40px ;
+  color: rgb(0, 0, 0);
+}
+h2{
+  font-size: 30px;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-decoration-color: #CE1126;
 }
