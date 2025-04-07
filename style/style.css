@@ -41,6 +41,8 @@
 .menu {
   display: flex;
   gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .boton {
@@ -48,15 +50,21 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .boton:hover {
   text-decoration: underline;
 }
 
+/* Bandera */
 .linea-bandera {
   display: flex;
   height: 6px;
+  margin: 1rem 0;
 }
 
 .franja {
@@ -74,13 +82,8 @@
 .rojo {
   background-color: #CE1126;
 }
-.titulo2{
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  font-size: 20px;
-}
+
+/*En general*/
 .Contenido {
   margin-top: 6px;
   position:static;
@@ -115,6 +118,8 @@
   padding: 5px 40px ;
   color: rgb(0, 0, 0);
 }
+
+/* Textos generales */
 h2{
   font-size: 30px;
   font-family: inherit;
@@ -146,66 +151,4 @@ p {
   color: #2c2c2c;
   margin: 10px 0 20px 0;
   text-align: justify;
-}
-.photos{
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  min-height: 100vh;
-}
-.photos .gallery{
-  max-width: 750px;
-  display: grid;
-  grid-template-columns: 300px 300px 300px ;
-  grid-template-rows: 250px 250px 250px 250px;
-  grid-gap: 1rem;
-}
-.photos .gallery img{
-  justify-content: center;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-.photos .gallery .img-0 {
-background: beige
-}
-.photos .gallery .img-a {
-background: rgb(37, 35, 31)
-}
-.photos .gallery .img-b {
-
-background: black
-}
-.photos .gallery .img-c {
-
-background: blanchedalmond
-}
-.photos .gallery .img-d {
-  
-background: blue
-}
-.photos .gallery .img-f {
-background: blueviolet
-
-}
-.photos .gallery .img-g {
-background:brown
-
-}
-.photos .gallery .img-h {
-background:aqua
-
-}
-.photos .gallery .img-i {
-background: aquamarine
-
-}
-.photos .gallery .img-j {
-
-background: red
-}
-.photos .gallery .img-k {
-  background: darkgoldenrod
-
 }
