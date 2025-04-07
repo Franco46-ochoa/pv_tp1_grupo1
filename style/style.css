@@ -208,7 +208,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* RESPONSIVE DESIGN */
 @media (min-width: 768px) {
   .menu {
     margin-top: 0;
