@@ -1,17 +1,27 @@
-/* Encabezado general */
+/* Encabezado General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Cuerpo General */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 0 1rem;
+}
+
 .encabezado {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a2b4c; /* Azul oscuro */
-  padding: 5px 40px ;
+  background-color: #0a2b4c;
+  padding: 5px 40px;
   color: white;
+  flex-wrap: wrap;
 }
 
 /* Logo y texto debajo */
@@ -23,14 +33,13 @@
 
 .logo {
   margin-top: 15px;
-  width: auto;
   height: 100px;
   opacity: 0.75;
 }
 
 .nombre-pais {
-  font-family:'Parisienne', cursive;
-  font-size:30px;
+  font-family: 'Parisienne', cursive;
+  font-size: 30px;
   color: white;
   font-weight: bold;
   margin-bottom: 15px;
@@ -41,99 +50,181 @@
 .menu {
   display: flex;
   gap: 30px;
+  margin-top: 10px;
 }
 
 .boton {
-  font-family:'Parisienne', cursive;
+  font-family: 'Parisienne', cursive;
   color: white;
   text-decoration: none;
   font-size: 20px;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .boton:hover {
-  text-decoration: underline;
+  background-color: white;
+  color: #0a2b4c;
 }
 
 .linea-bandera {
   display: flex;
   height: 6px;
+  margin: 1rem 0;
 }
 
 .franja {
-  flex: 0.5px;
+  flex: 1;
 }
 
 .amarillo {
-  background-color: #FFD700;
+  background-color: #ffd700;
 }
 
 .azul {
-  background-color: #0033A0;
+  background-color: #0033a0;
 }
 
 .rojo {
-  background-color: #CE1126;
+  background-color: #ce1126;
 }
-.titulo2{
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  font-size: 20px;
+.titulo2 {
+  margin: 2rem 0 1rem 15px;
+  font-size: 24px;
+  color: #004080;
 }
+
+.titulo2 h2 {
+  font-size: 2rem;
+}
+
 .Contenido {
   margin-top: 6px;
-  position:static;
   width: 200px;
-  height: 80vh ; 
+  height: 80vh;
   background-color: #ffffff;
   padding: 10px;
 }
-.cuerpo {
-  display: flex;
-  height:100vh; 
-}
+
 .Contenido li {
   margin-bottom: 15px;
   margin-left: 20px;
   color: #13163f;
 }
+.cuerpo {
+  display: flex;
+  height: 100vh;
+}
+
 .cuadrodeinformacion {
   margin-top: 50px;
-  max-width: 100%; /* Que no se limite */
-  width: 100%; /* Que use todo el ancho disponible */
+  width: 100%;
   overflow: visible;
   margin-left: 25px;
   margin-right: 20px;
 }
-.Cultura{
+
+.Cultura {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* Azul oscuro */
-  padding: 5px 40px ;
-  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  padding: 5px 40px;
+  color: black;
 }
-h2{
+
+h2 {
   font-size: 30px;
   font-family: inherit;
 }
-h3{
+
+h3 {
   font-size: 25px;
-  font-family: inherit;
   margin: 5px;
 }
-h4{
+
+h4 {
   font-size: 15px;
-  font-family: inherit;
   margin: 5px;
 }
-ul{
+
+ul {
   margin-left: 45px;
   margin-bottom: 15px;
 }
-li{
+
+li {
   font-size: 15px;
-  font-family: inherit;
   margin-bottom: 15px;
+}
+
+/* Secccion Museoss */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.museo {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-museo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+}
+
+.titulo-museo:hover {
+  text-decoration: underline;
+}
+
+.imagen-museo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.descripcion-museo {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Pie de pagina */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #004080;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  .menu {
+    margin-top: 0;
+  }
+
+  .museo {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .imagen-museo {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .descripcion-museo {
+    flex: 1;
+  }
 }
