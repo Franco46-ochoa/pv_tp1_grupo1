@@ -82,14 +82,8 @@
 .rojo {
   background-color: #CE1126;
 }
-/* Texto título */
-.titulo2{
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  font-size: 20px;
-}
+
+/*En general*/
 .Contenido {
   margin-top: 6px;
   position:static;
@@ -124,6 +118,8 @@
   padding: 5px 40px ;
   color: rgb(0, 0, 0);
 }
+
+/* Textos generales */
 h2{
   font-size: 30px;
   font-family: inherit;
@@ -158,6 +154,14 @@ p {
 }
 
 /* Seccion Museos  */
+.titulo2{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  font-size: 20px;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
