@@ -60,6 +60,7 @@
   text-decoration: underline;
 }
 
+/* Bandera */
 .linea-bandera {
   display: flex;
   height: 6px;
