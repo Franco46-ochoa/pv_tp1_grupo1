@@ -154,12 +154,12 @@ p {
 }
 
 /* Seccion Museos  */
-.titulo2{
-  margin-top: 20px;
-  margin-left: 15px;
-  margin-bottom: 15px;
+.titulo2 {
+  margin: 40px auto 10px auto;
   display: flex;
   font-size: 20px;
+  justify-content: center;
+  width: fit-content;
 }
 
 main {
