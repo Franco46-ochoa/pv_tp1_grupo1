@@ -147,3 +147,65 @@ p {
   margin: 10px 0 20px 0;
   text-align: justify;
 }
+.photos{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+.photos .gallery{
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px ;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-gap: 1rem;
+}
+.photos .gallery img{
+  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.photos .gallery .img-0 {
+background: beige
+}
+.photos .gallery .img-a {
+background: rgb(37, 35, 31)
+}
+.photos .gallery .img-b {
+
+background: black
+}
+.photos .gallery .img-c {
+
+background: blanchedalmond
+}
+.photos .gallery .img-d {
+  
+background: blue
+}
+.photos .gallery .img-f {
+background: blueviolet
+
+}
+.photos .gallery .img-g {
+background:brown
+
+}
+.photos .gallery .img-h {
+background:aqua
+
+}
+.photos .gallery .img-i {
+background: aquamarine
+
+}
+.photos .gallery .img-j {
+
+background: red
+}
+.photos .gallery .img-k {
+  background: darkgoldenrod
+
+}
