@@ -1,5 +1,5 @@
-/* Encabezado general */
-* {
+ /* Encabezado general */
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -98,6 +98,7 @@
   margin-left: 20px;
   color: #13163f;
 }
+
 .cuadrodeinformacion {
   margin-top: 50px;
   max-width: 100%; /* Que no se limite */
@@ -136,4 +137,13 @@ li{
   font-size: 15px;
   font-family: inherit;
   margin-bottom: 15px;
+  color: #2c2c2c;
+}
+p {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #2c2c2c;
+  margin: 10px 0 20px 0;
+  text-align: justify;
 }
