@@ -30,36 +30,37 @@
       <div class="franja rojo"></div>
     </div>
 
-    <form class="form-register">
-      <div class="titulo2">
-        <h2>Formulario</h2>
-      </div>
-      <label for="nombre">Nomres</label>
+    <form class="form-contacto">
+      <div class="form-titulo">Formulario</div>
+
+      <label for="nombre">Nombres</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="text"
         name="nombre"
         id="nombre"
-        placeholder="Ingrese su Nombre"
+        placeholder="Ingrese su Nombre" required
       />
       <label for="apellido">Apellido</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="text"
         name="apellido"
         id="apellido"
-        placeholder="Ingrese su Apellido"
+        placeholder="Ingrese su Apellido" required
       />
       <label for="correo">Correo</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="email"
         name="correo"
         id="correo"
-        placeholder="Ingrese su Correo"
+        placeholder="Ingrese su Correo" required
       />
-      <textarea class="controls" name="message" placeholder="Asunto"></textarea>
-      <input class="botons" type="button" value="Enviar" />
+      <label for="message">Asunto</label>
+      <textarea class="textarea-contacto" name="message" id="message" placeholder="Escribir mensaje" required></textarea>
+      
+      <input class="btn-enviar" type="submit" value="Enviar" />
     </form>
   </body>
 </html>
