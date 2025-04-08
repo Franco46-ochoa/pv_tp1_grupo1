@@ -30,13 +30,12 @@
       <div class="franja rojo"></div>
     </div>
 
-    <form class="form-register">
-      <div class="titulo2">
-        <h2>Formulario</h2>
-      </div>
+    <form class="form-contacto">
+      <div class="form-titulo">Formulario</div>
+
       <label for="nombre">Nombres</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="text"
         name="nombre"
         id="nombre"
@@ -44,7 +43,7 @@
       />
       <label for="apellido">Apellido</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="text"
         name="apellido"
         id="apellido"
@@ -52,15 +51,16 @@
       />
       <label for="correo">Correo</label>
       <input
-        class="controls"
+        class="input-contacto"
         type="email"
         name="correo"
         id="correo"
         placeholder="Ingrese su Correo" required
       />
       <label for="message">Asunto</label>
-      <textarea class="controls" name="message" id="message" placeholder="Escribir mensaje"></textarea>
-      <input class="botons" type="submit" value="Enviar" />
+      <textarea class="textarea-contacto" name="message" id="message" placeholder="Escribir mensaje" required></textarea>
+      
+      <input class="btn-enviar" type="submit" value="Enviar" />
     </form>
   </body>
 </html>
