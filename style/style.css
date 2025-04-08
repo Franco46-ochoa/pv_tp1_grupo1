@@ -104,8 +104,7 @@
 
 .cuadrodeinformacion {
   margin-top: 50px;
-  max-width: 100%; /* Que no se limite */
-  width: 100%; /* Que use todo el ancho disponible */
+  max-width: 70%; /* Que no se limite */
   overflow: visible;
   margin-left: 25px;
   margin-right: 20px;
@@ -200,6 +199,52 @@ grid-column: 1/3 ;
 .p-artesania{
   margin-top: 70px
 }
+/*Arquitectura*/
+.arqui-1,
+.arqui-2,
+.arqui-3,
+.arqui-4,
+.arqui-5,
+.arqui-6,
+.arqui-7 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Imagen y texto del mismo ancho */
+.arqui-1 div,
+.arqui-2 div,
+.arqui-3 div,
+.arqui-4 div,
+.arqui-5 div,
+.arqui-6 div,
+.arqui-7 div {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Imágenes */
+.arqui-1 img,
+.arqui-2 img,
+.arqui-3 img,
+.arqui-4 img,
+.arqui-5 img,
+.arqui-6 img,
+.arqui-7 img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Orden inverso para los artículos con clase "reverse" */
+.reverse {
+  flex-direction: row-reverse;
+}
+
 
 /* Seccion Museos  */
 .titulo2 {
