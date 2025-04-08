@@ -64,7 +64,7 @@
 .linea-bandera {
   display: flex;
   height: 6px;
-  margin: 1rem 0;
+  margin:  0;
 }
 
 .franja {
@@ -151,6 +151,54 @@ p {
   color: #2c2c2c;
   margin: 10px 0 20px 0;
   text-align: justify;
+}
+/* Imagenes de artesania */
+.photos{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  min-height: 100vh;
+ 
+}
+.photos .gallery{
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px ;
+  grid-template-rows:300px 300px  300px 300px 300px;
+  grid-gap:5rem;
+}
+
+.photos .gallery img{
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.texto-img {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #333;
+}
+
+.photos .gallery .img-0 {
+  grid-column: 1/3;
+
+}
+.photos .gallery .img-a {
+  grid-column: 3/3;
+  grid-row: 1/3 ;
+}
+
+.photos .gallery .img-f {
+grid-column: 2/4;
+
+}
+.photos .gallery .img-g {
+grid-column: 1/3 ;
+
+}
+.p-artesania{
+  margin-top: 70px
 }
 
 /* Seccion Museos  */
